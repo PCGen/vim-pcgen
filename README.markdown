@@ -18,5 +18,6 @@ Install [Pathogen.vim](https://github.com/tpope/vim-pathogen "Pathogen.vim"):
 Then run:
 
    ```bash
-   cd ~/.vim/bundle/ git clone https://github.com/pcgen/vim-pcgen.git
+   cd ~/.vim/bundle/
+   git clone https://github.com/pcgen/vim-pcgen.git
    ```
