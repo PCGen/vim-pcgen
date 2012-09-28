@@ -9,6 +9,10 @@ let b:did_ftplugin = 1
 let b:did_conversion = 0
 
 
+""" Automatically rewrite to tabbed format on write if we converted to multi-line
+autocmd BufWritePre <buffer> call pcgen#multiLineToTabbed()
+
+
 """ Function that set the syntax highlighting in tabbed format and hide it in
 """ multi-line format
 
