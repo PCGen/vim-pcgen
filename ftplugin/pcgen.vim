@@ -42,7 +42,7 @@ function! pcgen#tabbedToMultiLine() " {{{
 		return
 	endif
 
-	:%!perl -p -e 's/\n/\n\n/g; s/\t+/\n\t/g;'
+	:%!perl -p -e 's/\n/\n\n/g; s/\t(\t+)?/$1\n\t/g;'
 	let b:did_conversion = 1
 endfunction " }}}
 
