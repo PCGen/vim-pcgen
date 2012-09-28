@@ -22,7 +22,6 @@ function! pcgen#setTabbedOptions() " {{{
 endfunction " }}}
 
 function! pcgen#setMultiLineOptions() " {{{
-	setlocal nolist
 	setlocal autoindent
 endfunction
 
