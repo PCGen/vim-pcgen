@@ -56,6 +56,10 @@ manual installation
 changelog
 =========
 
+2012-10-01
+
+ * Move the Perl command execution to in-line code.
+
 2012-09-28
 
  * On buffer write, convert back to tab-based files.
