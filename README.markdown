@@ -1,10 +1,8 @@
-pcgen.vim
-============
+# pcgen.vim #
 
 This is a VIM helper to edit oldskool PCGen files. It allows you to convert between multi-line object files and tab-based object files and back by pressing <F2> and <F3>.
 
-Features
---------
+### Features ###
 
 1. Converts tab-delimited files to multi-line files by pressing `F2`; converts back when pressing `F3`; protects against accidental double conversion.
 2. Shows tab characters using special syntax (`»---`). This helps to differentiate between the two classes and helps you spotting inserting accidental spaces where tabs are needed when copying or such.
@@ -14,21 +12,18 @@ Features
 6. Knows to set specific options that are helpful in the two editing modes (autoindent, noexpandtab, etc).
 
 
-prerequisites
-=============
+### prerequisites ###
 
 You need Vim compiled with Perl bindings to make this work.
 
-usage
-=====
+# usage #
 
 1. Use `F2` to convert from single-line object file to multi-line
 2. Use `F3` to convert back
 3. Use `F4` while editing to insert `PREABILITY:1,CATEGORY=Special Ability,`.
 
 
-installation
-============
+# installation #
 
 Install [Pathogen.vim](https://github.com/tpope/vim-pathogen "Pathogen.vim"):
 
@@ -39,22 +34,19 @@ Then run:
    git clone https://github.com/pcgen/vim-pcgen.git
    ```
 
-installation sans git
----------------------
+### installation sans git ###
 
 1. Download the zip using the [download link](https://github.com/pcgen/vim-pcgen/downloads).
 2. Unpack into your bundle dir.
 
-manual installation
--------------------
+### manual installation ###
 
 1. Download the zip using the [download link])(https://github.com/pcgen/vim-pcgen/downloads).
 2. Unpack the zip.
 3. Alternatively, install ftdetect/pcgen.vim and ftplugin/pcgen.vim into your ftdetect and ftplugin dirs respectively.
 
 
-changelog
-=========
+# changelog #
 
 2012-10-01
 
@@ -70,8 +62,7 @@ changelog
  * Add protection against converting tab-based files to multi-line multiple times.
  * Add distinct options for multi-line mode and tab-based mode. (autoindent in multi-line)
 
-todo
-====
+## todo ##
 
 Add options for auto-reverting to tab-based lines on write-out.
 Add options for keeping multible tabs at the end of the line on reverting to tab-based.
