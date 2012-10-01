@@ -61,6 +61,6 @@ set noexpandtab
 call pcgen#setTabbedOptions()
 
 
-nmap <buffer> <F2> :call pcgen#tabbedToMultiLine()<CR>:call pcgen#setMultiLineOptions()<CR>
-nmap <buffer> <F3> :call pcgen#multiLineToTabbed()<CR>:call pcgen#setTabbedOptions()<CR>
-imap <buffer> <F4> PREABILITY:1,CATEGORY=Special Ability,
+nmap <silent> <buffer> <F2> :call pcgen#tabbedToMultiLine()<CR>:call pcgen#setMultiLineOptions()<CR>
+nmap <silent> <buffer> <F3> :call pcgen#multiLineToTabbed()<CR>:call pcgen#setTabbedOptions()<CR>
+imap <silent> <buffer> <F4> PREABILITY:1,CATEGORY=Special Ability,
